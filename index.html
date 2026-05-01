@@ -523,6 +523,10 @@ section{position:relative;z-index:1;padding:100px clamp(20px,8vw,120px);}
   transition:transform .3s,box-shadow .3s;
   cursor:default;
 }
+.project-card.featured {
+  border: 1px solid var(--indigo-light);
+  box-shadow: 0 0 30px rgba(79,70,229,0.25);
+}
 .project-card::before{
   content:'';
   position:absolute;top:0;left:-100%;
@@ -906,6 +910,32 @@ footer span{color:var(--pink);}
   <div class="section-label">Work</div>
   <h2 class="section-title">Featured <span>Projects</span></h2>
   <div class="projects-grid">
+
+
+    <div class="project-card reveal">
+  <span class="project-emoji">🧠</span>
+  <div class="project-name">MyVectorDB</div>
+  <div class="project-desc">
+  Built a high-performance vector database in C++ using HNSW, achieving ~10× faster similarity search 
+  vs brute-force at 768 dimensions. Deployed a RAG pipeline on AWS EC2 with <100ms latency over 10K+ embeddings.
+</div>
+
+  <div class="project-tags">
+    <span class="project-tag">C++</span>
+    <span class="project-tag">HNSW</span>
+    <span class="project-tag">KD-Tree</span>
+    <span class="project-tag">RAG</span>
+    <span class="project-tag">REST API</span>
+    <span class="project-tag">AWS EC2</span>
+  </div>
+  <a href="https://github.com/priyam-dubey/MyVectorDB" target="_blank" class="project-link">
+    GitHub →
+  </a>
+</div>
+
+
+
+
     <div class="project-card reveal">
       <span class="project-emoji">🍽️</span>
       <div class="project-name">Apna Swad</div>
